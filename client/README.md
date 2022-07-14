@@ -1,17 +1,28 @@
-# Project Management Application
+# Build Yearn School Learning Platform
 
-## Available Scripts
+# Setting Up Backend
 
-In the project directory, you can run:
+## Install express, graphql and express-graphql packages
 
-### `npm start`
+Run `npm i express express-graphql graphql mongoose cors colors`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Install dependencies
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Run `npm i -D nodemon dotenv`
 
-# Author
+## Start the server
 
-Ojok Simon Peter <simonpeter.oj@gmail.com>
+In the root directory, run `npm run dev`
+
+## Add Instrutor
+
+`mutation{ addInstructor(firstName:"Solomon",middleName:"Peter",lastName:"Nmsoma",gender:male,dateOfBirth:"10/10/1998",address:"Lagos, Nigeria",email:"solomon.p@gmail.com",password:"password123",phone:"+234767890990",nationality:"Nigeria",education:"Bachelor Degree",status:approved,courseId:"62c0d8755de3bf0db2dc573a"){ id firstName middleName lastName gender dateOfBirth address email password phone nationality education status courseId{ id name duration description status } } }`
+
+## Query Instructors
+
+`{ instructors{ id firstName middleName lastName gender dateOfBirth address email phone nationality education status courseId{ id name duration description status } } }`
+
+## Authors
+
+1. Ojok Simon Peter [simonpeter.oj@gmail.com]
+2. Nmesoma Solomon Peter [nmesomasolo2809@gmail.com]
